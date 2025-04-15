@@ -1,0 +1,100 @@
+Windows
+Skinuti Git bash
+
+Naredba za kloniranje repozitorija
+git clone https://github.com/<ime_frajera>/<ime_projekta>.git
+
+Token za cli
+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
+
+VSC
+
+Clone into repository
+inicijalizacija - git init
+
+Stvaranje brancheva
+
+git branch <name>
+
+Prebacivanje na drugi branch
+git checkout <name>
+
+Osnovna konfiguracija
+
+git remote add origin <branch name - master, development, trunk, main>
+
+Primjer:
+git remote add origin main
+git remote add origin <link>
+
+Provjera:
+
+
+git remote -v
+
+Dodavanje u trenutni repo
+
+git add <name> ili ako dodaješ sve git add -a ili git add .
+
+Nakon dodavanja ide commit - | -m <- message  | "poruka"
+
+git commit -m "poruka"
+
+Primjer:
+git commit -m "Debugging aws_kms_key#1"
+
+Pushanje -> uploadanje na repozitorijž
+
+git push -u origin <env>
+
+env = environment - dev, qa, prod ili za svakodnevnu upotrebu main, master, development, trunk
+
+
+Brisanje brancha
+
+git branch -d <name>
+
+Potezanje najnovijih promjena iz repozitorija
+
+git pull
+
+
+
+WiNDOWS!!!!!!
+
+Kako bi git radio u powershellu ili command promptu, potrebno je postaviti ga u Environment path
+
+Win + R
+sysdm.cpl
+Click na environment variables
+
+
+System variables
+|----------------------------|
+|			     |
+|		  	     |
+|			     |
+|----------------------------|
+
+Environment variables
+|----------------------------|
+|path			     | New
+|		  	     | !!!Edit!!!
+|			     | Neki kurac
+|----------------------------|
+
+C:\\nekikurac
+C:\\nekidrugikurac
+C:\\path\to\git     < Ne uključuješ sami file
+
+Primjer:
+
+Ako je git instaliran i nalazi se u C:\Program files\git\git.exe
+
+U path upišeš C:\\Program files\git
+
+Bez ovoga git naredba neće raditi u powershellu jer je Windows retardiran i neće je znati naći
+
+Ako nije u path, onda će raditi ovako:
+
+C:\\Program files\git\git.exe push -u origin qa
