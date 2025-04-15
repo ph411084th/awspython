@@ -60,3 +60,7 @@ if __name__ == "__main__":
     input_wav_folder = "/home/wav"
     batch_analyze(input_wav_folder)
     print("\nAll .wav files have been processed.")
+
+# This script analyzes .wav files in the specified directory, generating spectrograms and summary statistics.
+# It uses the scipy library for audio processing and matplotlib for plotting.
+# The script is designed to be run in a Python environment with the necessary libraries installed.
